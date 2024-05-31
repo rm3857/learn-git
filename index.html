@@ -26,16 +26,19 @@
         <section id="projects">
             <h2>Projects</h2>
             <div class="project" onclick="openModal('project1')">
-                <h3>Project 1</h3>
-                <p>Description of project 1.</p>
+                <img src="images/weather-app.webp" alt="Weather App">
+                <h3>Weather App</h3>
+                <p>A simple weather application that displays current weather conditions for any location.</p>
             </div>
             <div class="project" onclick="openModal('project2')">
-                <h3>Project 2</h3>
-                <p>Description of project 2.</p>
+                <img src="images/todo-list.webp" alt="Todo List">
+                <h3>Todo List</h3>
+                <p>An intuitive todo list application to keep track of your tasks and stay organized.</p>
             </div>
             <div class="project" onclick="openModal('project3')">
-                <h3>Project 3</h3>
-                <p>Description of project 3.</p>
+                <img src="images/personal-blog.webp" alt="Personal Blog">
+                <h3>Personal Blog</h3>
+                <p>A personal blog platform to share your thoughts and experiences with the world.</p>
             </div>
         </section>
         
@@ -68,22 +71,39 @@
     <div id="modal-project1" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('project1')">&times;</span>
-            <h3>Project 1 Details</h3>
-            <p>Detailed information about project 1.</p>
+            <h3>Weather App</h3>
+            <p>A simple weather application that displays current weather conditions for any location. It uses the OpenWeatherMap API to fetch real-time data and displays it in a user-friendly interface. Key features include:</p>
+            <ul>
+                <li>Current weather conditions</li>
+                <li>5-day weather forecast</li>
+                <li>Search by city or location</li>
+            </ul>
         </div>
     </div>
     <div id="modal-project2" class="modal">
         <div class="modal-content">
+            <img src="images/todo-list.png" alt="Todo List">
             <span class="close" onclick="closeModal('project2')">&times;</span>
-            <h3>Project 2 Details</h3>
-            <p>Detailed information about project 2.</p>
+            <h3>Todo List</h3>
+            <p>An intuitive todo list application to keep track of your tasks and stay organized. It features a simple, clean interface that allows users to add, edit, and delete tasks. Key features include:</p>
+            <ul>
+                <li>Task creation and deletion</li>
+                <li>Mark tasks as completed</li>
+                <li>Filter tasks by status</li>
+            </ul>
         </div>
     </div>
     <div id="modal-project3" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('project3')">&times;</span>
-            <h3>Project 3 Details</h3>
-            <p>Detailed information about project 3.</p>
+            <img src="images/personal-blog.png" alt="Personal Blog">
+            <h3>Personal Blog</h3>
+            <p>A personal blog platform to share your thoughts and experiences with the world. It includes a content management system (CMS) for easy post creation and management. Key features include:</p>
+            <ul>
+                <li>Create and manage blog posts</li>
+                <li>Comment system</li>
+                <li>Responsive design</li>
+            </ul>
         </div>
     </div>
 
