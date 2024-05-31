@@ -3,13 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git Test Website</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Test GitHub</h1>
-    <p>
-        This is a really important note.
-        Adding other stuff also.
-    </p>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section id="home">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hello! I'm [Your Name], a passionate developer specializing in JavaScript, HTML5, and CSS3.</p>
+        </section>
+        
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project" onclick="openModal('project1')">
+                <h3>Project 1</h3>
+                <p>Description of project 1.</p>
+            </div>
+            <div class="project" onclick="openModal('project2')">
+                <h3>Project 2</h3>
+                <p>Description of project 2.</p>
+            </div>
+            <div class="project" onclick="openModal('project3')">
+                <h3>Project 3</h3>
+                <p>Description of project 3.</p>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you have any questions or want to get in touch, please fill out the form below.</p>
+            <form id="contactForm" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
+
+    <!-- Modals -->
+    <div id="modal-project1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project1')">&times;</span>
+            <h3>Project 1 Details</h3>
+            <p>Detailed information about project 1.</p>
+        </div>
+    </div>
+    <div id="modal-project2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project2')">&times;</span>
+            <h3>Project 2 Details</h3>
+            <p>Detailed information about project 2.</p>
+        </div>
+    </div>
+    <div id="modal-project3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project3')">&times;</span>
+            <h3>Project 3 Details</h3>
+            <p>Detailed information about project 3.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
